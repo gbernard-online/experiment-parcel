@@ -1,0 +1,37 @@
+/*-------------------------------------------- ghislain.bernard@gmail.com --------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  user-select: none;
+}
+
+body {
+  background: #eee;
+  color: #111;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  background: #ddd;
+  margin: 0;
+}
+
+main {
+  align-items: center;
+  display: grid;
+  /* grid-template-areas: '_ _ _'; */
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  /* display: flex; */
+  justify-items: center;
+  /* min-height: 100vh; */
+}
+
+/*-------------------------------------------- ghislain.bernard@gmail.com --------------------------------------------*/
