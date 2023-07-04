@@ -17,19 +17,11 @@ html
 
     main
       include index.html
-      //- picture
-      //-   source(srcset!='logo/node.png?as=avif&width=1024' type='image/avif')
-      //-   source(srcset!='logo/node.png?as=webp&width=512' type='image/webp')
-      //-   img(alt='node' src!='logo/node.png?width=512' style='width:100%')
+
       picture
         source(srcset!='logo/parcel.png?as=avif&width=1024' type='image/avif')
         source(srcset!='logo/parcel.png?as=webp&width=512' type='image/webp')
         img(alt='parcel' src!='logo/parcel.png?width=256' style='max-width:256px')
-        //- img(alt='parcel' src!='logo/parcel.png?width=64' style='max-width:512px')
-      //- picture
-      //-   source(srcset!='logo/node.png?as=avif&width=1024' type='image/avif')
-      //-   source(srcset!='logo/node.png?as=webp&width=512' type='image/webp')
-      //-   img(alt='node' src!='logo/node.png?width=512' style='width:100%')
 
     script(src='./script.ts',type='module')
 
