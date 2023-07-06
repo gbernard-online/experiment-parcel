@@ -3,15 +3,14 @@ type: docker
 
 steps:
   - name: test
-    image: node:20.2-alpine
+    image: node:20.3-alpine
     commands:
       - pwd
       - apk --no-cache add coreutils g++ make python3 util-linux
       - node --version
       - npm --version
-      - '[ ! -z "$CI_REPO_REMOTE" ] && chown --recursive node: .'
+      - '[[ $CI_REPO_REMOTE ]] && chown --recursive node: .'
       - su node -c 'npm install'
       - su node -c 'NODE_ENV=production npm run-script build'
       - su node -c 'npm run-script version'
       - su node -c 'npm run-script lint'
-
